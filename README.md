@@ -36,7 +36,7 @@ This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performanc
 | AI Accelerator | Sakura-II®️ M.2 (EdgeCortix) - https://www.edgecortix.com/en/press-releases/edgecortixs-sakura-ii-ai-accelerator-brings-low-power-generative-ai-to-raspberry-pi-5-and-other-arm-based-platforms|
 | SSD | 8TB NVMe M.2 (WD_BLACK SN770, connected via USB-C 3.2 Gen 2 enclosure) |
 | Enclosure | NVMe SSD Type-C 10Gbps Aluminum Case - SABRENT USB 3.2 Type-C Tool-Free Enclosure for M.2 PCIe NVMe and SATA SSDs (EC-SNVE) |
-| Cooling | Heatsink + Fan (for SSD and CPU), optional heatsink for Sakura-II |
+| Cooling | Heatsink + Fan (for SSD and CPU), optional heatsink for Sakura-II®️ |
 | Power | Geekworm PD 27W 5.1V 5A USB-C Power Supply |
 | OS Boot | Ubuntu 24.04 (bootable from USB-C NVMe SSD) |
 | Display | HDMI or USB-C display connection |
@@ -105,7 +105,7 @@ Install latest `mesa`, `libva`, and V4L2-request drivers if needed.
 
 ## 🧊 Cooling Notes
 
-- Use heatsinks on CPU, SSD, and optionally the Sakura-II (if under sustained load).
+- Use heatsinks on CPU, SSD, and optionally the Sakura-II®️ (if under sustained load).
 
   <img width="380" height="250" alt="image" src="https://github.com/user-attachments/assets/3942134c-5ed5-44d5-8e4f-cd7b8b94cb6b" />
 
@@ -167,9 +167,9 @@ These models are run via:
 |----------|-------------|
 | **Board** | Orange Pi 5 Plus (32GB LPDDR4x RAM) |
 | **OS Boot** | Ubuntu 24.04 booted via USB-C NVMe SSD |
-| **AI Accelerator** | Sakura-II M.2 Edge AI Accelerator |
+| **AI Accelerator** | Sakura-II®️ M.2 Edge AI Accelerator |
 | **Storage** | 8TB NVMe SSD (USB-C Enclosure) |
-| **Cooling** | Dedicated fan and heatsink for SSD and Sakura-II |
+| **Cooling** | Dedicated fan and heatsink for SSD and Sakura-II®️ |
 | **LLM Software Stack** | AnythingLLM, GPT4All, Hugging Face Quantized Models |
 | **Browser Stack** | Chromium w/ GPU acceleration enabled for ChatGPT and web LLM tools |
 | **Cassette Switch System** | Manual LLM selector with on-demand quantized GGUF model loading |
@@ -211,7 +211,7 @@ These models are run via:
 ### 🧪 Stability and Heat Management
 
 - CPU load averages: ~30–45% while idle w/ background services
-- Load temps (w/ fan): 48–55°C (CPU), 50–58°C (Sakura-II), 45–52°C (SSD)
+- Load temps (w/ fan): 48–55°C (CPU), 50–58°C (Sakura-II®️), 45–52°C (SSD)
 - No throttling detected with current heatsink + airflow setup
 
 ## ⚙️ Power Supply Specs
@@ -225,7 +225,7 @@ These models are run via:
 |----------------------------------|---------|------------------|----------------|-------|
 | Orange Pi 5 Plus (32GB LPDDR4X) | 5.1V    | 2.5–3.5A         | 13–18W         | Under load (AI tasks) |
 | NVMe SSD (8TB via USB-C)        | 5.1V    | 0.9–1.2A         | 4.5–6W         | Depends on SSD controller |
-| Sakura-II M.2 AI Accelerator    | 5.1V    | 1.0–1.5A         | 5–7.5W         | Inference mode |
+| Sakura-II®️ M.2 AI Accelerator    | 5.1V    | 1.0–1.5A         | 5–7.5W         | Inference mode |
 | USB Peripherals (keyboard/mouse)| 5.1V    | 0.1–0.2A         | 0.5–1W         | Varies |
 | Fan + Heatsink (Active Cooling) | 5.1V    | 0.15A            | ~0.75W         | For NVMe/Sakura cooling |
 
@@ -243,7 +243,7 @@ These models are run via:
 ## 🧠 Performance Notes
 - Power usage spikes when:
     - Loading LLMs into RAM (via AnythingLLM)
-    - Running multi-threaded tasks across CPU and Sakura-II
+    - Running multi-threaded tasks across CPU and Sakura-II®️
 - LLM caching to SSD increases NVMe power briefly.
 
 ## ✅ Recommended Workflows
@@ -256,7 +256,7 @@ These models are run via:
 
 ## 🧾 Final Notes
 
-This Orange Pi 5 Plus system offers desktop-level generative AI performance with support for high-throughput SSD, quantized LLMs, and dedicated AI acceleration via Sakura-II. Ideal for offline use, research, coding, creative writing, and system troubleshooting.
+This Orange Pi 5 Plus system offers desktop-level generative AI performance with support for high-throughput SSD, quantized LLMs, and dedicated AI acceleration via Sakura-II®️. Ideal for offline use, research, coding, creative writing, and system troubleshooting.
 
 ## ©️ License
 Sunny Chase, All Rights Reserved 2025
