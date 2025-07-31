@@ -4,7 +4,7 @@
 
 This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performance, portable AI workstation using:
 - A bootable 8TB NVMe SSD (via USB-C)
-- Sakura-II M.2 AI accelerator (installed in PCIe x4 slot)
+- Sakura-II®️ M.2 AI accelerator (installed in PCIe x4 slot)
 - Local quantized LLMs (cassette-style model switching)
 - Hardware-accelerated Chromium for ChatGPT
 - AnythingLLM for offline PDF/document Q&A
@@ -23,7 +23,7 @@ This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performanc
 | Item | Description |
 |------|-------------|
 | SBC | Orange Pi 5 Plus 32GB LPDDR4x |
-| AI Accelerator | Sakura-II M.2 (EdgeCortix) |
+| AI Accelerator | Sakura-II®️ M.2 (EdgeCortix) |
 | SSD | 8TB NVMe M.2 (WD_BLACK SN770, connected via USB-C 3.2 Gen 2 enclosure) |
 | Enclosure | NVMe SSD Type-C 10Gbps Aluminum Case (shown in image) |
 | Cooling | Heatsink + Fan (for SSD and CPU), optional heatsink for Sakura-II |
@@ -99,7 +99,7 @@ Install latest `mesa`, `libva`, and V4L2-request drivers if needed.
 | Component | Interface | Speed (R/W MB/s) |
 |-----------|-----------|------------------|
 | USB-C NVMe SSD | USB 3.2 Gen 2 (10 Gbps) | 850–1000 MB/s |
-| PCIe Sakura-II | Gen 2 x4 (2 GB/s theoretical) | 1000–1600 TOPS peak |
+| PCIe Sakura-II®️ | Gen 2 x4 (2 GB/s theoretical) | 1000–1600 TOPS peak |
 | eMMC | Internal | 150–300 MB/s |
 | microSD | UHS-I (best case) | 50–90 MB/s |
 
@@ -134,3 +134,37 @@ Install latest `mesa`, `libva`, and V4L2-request drivers if needed.
 - `pdfplumber` + `tabulate` for doc Q&A
 - `lmdeploy` and `text-generation-webui` for flexible GPU/CPU switching
 - `glmark2-es2` to benchmark GPU (if needed)
+
+## 🧠 System Purpose & AI Model Overview
+
+This Orange Pi 5 Plus build is engineered as a **modular, edge-AI workstation** that enables rapid local inference, debugging, and task automation using quantized large language models (LLMs). Key use cases include:
+
+- 🔁 **Cassette-style LLM switching** via GUI: Load one model at a time depending on task needs.
+- 📄 **Offline document interpretation** (PDF, DOCX): Summarize, extract data, or reason over engineering schematics.
+- 🧠 **Symbolic and mathematical problem solving**: Integrated tools like SymPy and Math LLMs for engineering, control theory, or finance.
+- 🐍 **Code generation**: Python/Bash code for GPIO, I2C, RS232/485, CAN protocols and automation tools.
+- 📊 **Stock/market prediction**: Run FinGPT and similar models to predict price trends, sentiment, and GEX hedging.
+- 🎶 **Music generation**: Use sample-based models (e.g., MusicGen, AudioLDM) with onboard libraries and instruments.
+- 🎥 **YouTube/audio reasoning**: Summarize video content and generate follow-up actions or reports.
+- 💬 **Natural language reports and procedures**: Automatically generate operational procedures, system summaries, and markdown documentation.
+
+### ⚙️ Included Local LLMs & Their Roles
+
+| Model | Purpose | Size | Notes |
+|-------|---------|------|-------|
+| **WizardCoder-15B** | High-performance code and troubleshooting assistant | 15B | GPTQ Q4_K_M |
+| **DeepSeek-Coder-6.7B** | Fast Python + logic generation | 6.7B | Code workflows |
+| **Mistral 7B Instruct** | General-purpose reasoning | 7B | Default fallback |
+| **Yi-34B GPTQ** | High-context reasoning and summarization | 34B | Heavyweight |
+| **Phi-3 Mini** | Lightweight math + logic model | 1.8B | Fastest to load |
+| **FinGPT** | Financial prediction and text analysis | ~7B | Focused |
+| **WizardMath-7B** | Symbolic/advanced math | 7B | Engineering logic |
+| **MusicGen / AudioLDM2** | Sample-conditioned music generation | <2B | Local WAV library supported |
+
+These models are run via:
+- 🧠 `llama.cpp`, `text-generation-webui`, `GPT4All`
+- 🎛️ Selected via GUI for cassette-style switching (no concurrent runs)
+- 📁 Stored on USB-C NVMe SSD, loaded to RAM as needed
+
+## ©️ License
+Sunny Chase, All Rights Reserved 2025
