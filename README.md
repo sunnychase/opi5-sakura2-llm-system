@@ -203,7 +203,6 @@ These models are run via:
 
 - 🔌 Local LLM chat (offline, private, uncensored)
 - 📁 PDF and DOCX document QA, parsing, summarization
-- 🎵 Music generation (via MusicGen, Riffusion)
 - 🧠 Coding assistant (Python, Bash, circuit scripts)
 - 📊 Report generation and formatting (Markdown, LaTeX)
 - 🔁 AI model swapping using "cassette change" system
