@@ -17,7 +17,7 @@ This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performanc
     
   <img width="1011" height="445" alt="image" src="https://github.com/user-attachments/assets/7123ad5a-c25f-424f-85d2-d8277da0164b" />
 
-- Local quantized LLMs (downloaded from lmstudio.ai, huggingface.io, etc. and used in the cassette-style model switching GUI interface)
+- Local quantized LLMs (downloaded from lmstudio.ai, huggingface.co, etc. and used in the cassette-style model switching GUI interface)
 - Hardware-accelerated Chromium for ChatGPT
 - AnythingLLM for offline PDF/document Q&A
 
