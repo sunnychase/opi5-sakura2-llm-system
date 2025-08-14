@@ -46,8 +46,9 @@ This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performanc
 **Recommended Image for the best GUI (Desktop) experience with the Orange Pi 5 Plus, use the **Ubuntu 24.04 LTS Desktop with Linux 6.1** image built specifically for this SBC.
 
 OS Boot Download Link (**Size:** 1.7 GB):
-https://github.com/Joshua-Riek/ubuntu-rockchip/releases/download/v2024.10.23/ubuntu-24.04-preinstalled-desktop-arm64-orangepi-5-plus.img.xz
+https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5-plus.html
 
+<img width="2307" height="1101" alt="image" src="https://github.com/user-attachments/assets/fecec922-1282-4c4f-a364-b0904c804195" />
 
 ## ⚙️ Storage Layout
 
