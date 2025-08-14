@@ -38,10 +38,16 @@ This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performanc
 | Enclosure | NVMe SSD Type-C 10Gbps Aluminum Case - SABRENT USB 3.2 Type-C Tool-Free Enclosure for M.2 PCIe NVMe and SATA SSDs (EC-SNVE) |
 | Cooling | Heatsink + Fan (for SSD and CPU), optional heatsink for Sakura-II®️ |
 | Power | Geekworm PD 27W 5.1V 5A USB-C Power Supply |
-| OS Boot | Ubuntu 24.04 (bootable from USB-C NVMe SSD) |
+| OS Boot** | Ubuntu 24.04 (bootable from USB-C NVMe SSD) |
 | Display | HDMI or USB-C display connection |
 | Input | USB keyboard/mouse |
 | Optional | USB 3.0 hub, WiFi 6E onboard, BT 5.3, GPIO access pins |
+
+**Recommended Image for the best GUI (Desktop) experience with the Orange Pi 5 Plus, use the **Ubuntu 24.04 LTS Desktop with Linux 6.1** image built specifically for this SBC.
+
+OS Boot Download Link:
+[ubuntu-24.04-preinstalled-desktop-arm64-orangepi-5-plus.img.xz](https://github.com/Joshua-Riek/ubuntu-rockchip/releases/download/v2024.10.23/ubuntu-24.04-preinstalled-desktop-arm64-orangepi-5-plus.img.xz)  
+**Size:** 1.7 GB 
 
 ## ⚙️ Storage Layout
 
