@@ -1,8 +1,14 @@
-# Orange Pi 5 Plus Local LLM Deployment System
+# Orange Pi 5 Plus Local Open-Source Large Language Model (LLM) Deployment System
 
 ## 📦 Overview
 
-This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performance, portable AI workstation using:
+The steps outlined in this repository builds and transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performance, portable AI workstation using open-source LLMs. 
+
+
+Using open-source LLMs offers several key benefits: you avoid recurring monthly fees since the models are free to run once downloaded, and you retain full control over them without the restrictions or usage limits imposed by commercial platforms. They can be stored and run locally on your own hardware, which enhances privacy and security by keeping sensitive data offline. Open-source models are also highly customizable, allowing you to fine-tune them for specific tasks, integrate them into unique workflows, and run them as much as you want without worrying about throttling or policy limitations. Overall, they provide cost savings, flexibility, and freedom that proprietary, cloud-based LLMs often can’t match.
+
+
+<img width="770" height="362" alt="image" src="https://github.com/user-attachments/assets/0ca6f5d2-f715-4bbc-9873-1b9226398654" />
 
 - Orange Pi Plus (32GB)
   
