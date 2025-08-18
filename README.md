@@ -93,6 +93,8 @@ https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5-plus.ht
 
 Enable Vulkan + GPU compositing:
 
+https://github.com/sunnychase/chromium-gpu/tree/main
+
 ```bash
 chromium-browser --enable-features=VaapiVideoDecoder --use-gl=egl --enable-zero-copy --enable-gpu-rasterization --enable-oop-rasterization --ignore-gpu-blocklist
 ```
