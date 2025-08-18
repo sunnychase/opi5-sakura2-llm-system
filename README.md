@@ -52,7 +52,8 @@ https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5-plus.ht
 <img width="2307" height="1101" alt="image" src="https://github.com/user-attachments/assets/fecec922-1282-4c4f-a364-b0904c804195" />
 
 ## ⚙️ Storage Layout
-Steps on how to boot from the Orange Pi's USB-C --> https://github.com/sunnychase/usbc-booting-opi5plus/blob/main/README.md
+Steps on how to boot from the Orange Pi's USB-C:
+https://github.com/sunnychase/usbc-booting-opi5plus/blob/main/README.md
 
 | Partition | Purpose | Filesystem | Size |
 |-----------|---------|------------|------|
