@@ -107,6 +107,7 @@ chrome://gpu
 Install latest `mesa`, `libva`, and V4L2-request drivers if needed.
 
 ## 📊 Performance Benchmarks
+Since the NVMe PCIe on the Orange Pi 5 Plus is being utilized by the Sakura-II®️ M.2, it's best to store the LLMs in the external powered NVMe reader and boot from the Orange Pi's USB-C port, since the I/O is 850-1000 MB/s (which is crutial to load LLMs) and is configured to boot from the USB-C ([click here for the steps to image the drives and boot order](https://github.com/sunnychase/opi5plus-boot-order/tree/main)).
 
 | Component | Interface | Speed (R/W MB/s) |
 |-----------|-----------|------------------|
@@ -179,7 +180,7 @@ These models are run via:
 |----------|-------------|
 | **Board** | Orange Pi 5 Plus (32GB LPDDR4x RAM) |
 | **OS Boot** | Ubuntu 24.04 booted via USB-C NVMe SSD |
-| **AI Accelerator** | Sakura-II®️ M.2 Edge AI Accelerator |
+| **AI Accelerator** | Sakura-II®️ M.2 Edge AI Accelerator PCIe|
 | **Storage** | 8TB NVMe SSD (USB-C Enclosure) |
 | **Cooling** | Dedicated fan and heatsink for SSD and Sakura-II®️ |
 | **LLM Software Stack** | AnythingLLM, GPT4All, Hugging Face Quantized Models |
@@ -201,15 +202,6 @@ These models are run via:
 | TinyLlama 1.1B | 1.1B | Q4_K_M | 20–25 | For mobile tasks |
 
 > Note: Performance depends on model quantization, batch size, and RAM allocation. Phi-3-mini and TinyLlama perform best for latency-critical tasks.
-
-### 📈 Storage I/O Performance
-
-| Interface | Avg. Read Speed | Avg. Write Speed | Notes |
-|-----------|------------------|-------------------|-------|
-| **USB-C NVMe (Gen 2)** | 900–1050 MB/s | 850–950 MB/s | Optimal for LLM loads |
-| **PCIe NVMe (x4)** | 1800–2200 MB/s | 1700–2000 MB/s | Used for accelerator |
-| **eMMC** | 180–200 MB/s | 100–120 MB/s | Only used if USB fails |
-| **microSD (UHS-I)** | 70–90 MB/s | 50–70 MB/s | Avoid for OS/LLM loading |
 
 ### 🖥️ System Use Cases
 
