@@ -9,9 +9,9 @@ This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performanc
   <center><img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/8c982324-3f88-4e3a-b179-7ebbc08d06fd" /></center>
   <img width="608" height="501" alt="image" src="https://github.com/user-attachments/assets/742f1fa3-9da6-417d-a2b3-8d221cffab7c" />
 
-- A bootable 8TB NVMe SSD (via USB-C)
+- Bootable 8TB NVMe SSD (via USB-C)
   
-  <img width="605" height="300" alt="image" src="https://github.com/user-attachments/assets/3ddba983-8d3f-4a09-a711-1d65938b1ae1" />
+  <img width="536" height="150" alt="image" src="https://github.com/user-attachments/assets/ec71e1b6-4e59-414f-80cd-79bd2084aa60" />
 
 - Sakura-II®️ M.2 AI accelerator (installed in PCIe x4 slot)
     
@@ -34,8 +34,8 @@ This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performanc
 |------|-------------|
 | SBC | Orange Pi 5 Plus 32GB LPDDR4x |
 | AI Accelerator | Sakura-II®️ M.2 [EdgeCortix](https://www.edgecortix.com/en/press-releases/edgecortixs-sakura-ii-ai-accelerator-brings-low-power-generative-ai-to-raspberry-pi-5-and-other-arm-based-platforms)|
+| USB Type C Dual Docking Station for PCIe NVMe M.2 SSD| [SABRENT USB Type-C Dual Docking Station for PCIe NVMe M.2 SSD](https://sabrent.com/products/EC-SSD2)
 | SSD | 8TB NVMe M.2 (WD_BLACK SN770, connected via USB-C 3.2 Gen 2 enclosure) |
-| Enclosure | NVMe SSD Type-C 10Gbps Aluminum Case - SABRENT USB 3.2 Type-C Tool-Free Enclosure for M.2 PCIe NVMe and SATA SSDs (EC-SNVE) |
 | Cooling | Heatsink + Fan (for SSD and CPU), optional heatsink for Sakura-II®️ |
 | Power | Geekworm PD 27W 5.1V 5A USB-C Power Supply |
 | OS Boot** | Ubuntu 24.04 (bootable from USB-C NVMe SSD) |
@@ -43,12 +43,13 @@ This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performanc
 | Input | USB keyboard/mouse |
 | Optional | USB 3.0 hub, WiFi 6E onboard, BT 5.3, GPIO access pins |
 
-**Recommended Image for the best GUI (Desktop) experience with the Orange Pi 5 Plus, use the **Ubuntu 24.04 LTS Desktop with Linux 6.1** image built specifically for this SBC.
+**Recommended Image** for the best GUI (Desktop) experience with the Orange Pi 5 Plus, use the **Ubuntu 24.04 LTS Desktop with Linux 6.1** image built specifically for this SBC.
 
 OS Boot Download Link (**Size:** 1.7 GB):
+
 [Joshau Riek - Ubuntu RockChip Download for Orange Pi Plus](https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5-plus.html)
 
-<img width="2307" height="1101" alt="image" src="https://github.com/user-attachments/assets/fecec922-1282-4c4f-a364-b0904c804195" />
+<img width="1639" height="678" alt="image" src="https://github.com/user-attachments/assets/9cca4739-1098-4347-b336-24f7750fe825" />
 
 or you can also try [Ubuntu 24.04.3 LTS Desktop for ARM Chips](https://ubuntu.com/download/desktop) 
 
@@ -100,6 +101,7 @@ chromium-browser --enable-features=VaapiVideoDecoder --use-gl=egl --enable-zero-
 ```
 
 Validate GPU use:
+
 ```bash
 chrome://gpu
 ```
