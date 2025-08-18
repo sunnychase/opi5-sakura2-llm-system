@@ -33,7 +33,7 @@ This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performanc
 | Item | Description |
 |------|-------------|
 | SBC | Orange Pi 5 Plus 32GB LPDDR4x |
-| AI Accelerator | Sakura-II®️ M.2 (EdgeCortix) - https://www.edgecortix.com/en/press-releases/edgecortixs-sakura-ii-ai-accelerator-brings-low-power-generative-ai-to-raspberry-pi-5-and-other-arm-based-platforms|
+| AI Accelerator | Sakura-II®️ M.2 [EdgeCortix](https://www.edgecortix.com/en/press-releases/edgecortixs-sakura-ii-ai-accelerator-brings-low-power-generative-ai-to-raspberry-pi-5-and-other-arm-based-platforms)|
 | SSD | 8TB NVMe M.2 (WD_BLACK SN770, connected via USB-C 3.2 Gen 2 enclosure) |
 | Enclosure | NVMe SSD Type-C 10Gbps Aluminum Case - SABRENT USB 3.2 Type-C Tool-Free Enclosure for M.2 PCIe NVMe and SATA SSDs (EC-SNVE) |
 | Cooling | Heatsink + Fan (for SSD and CPU), optional heatsink for Sakura-II®️ |
@@ -46,15 +46,13 @@ This build transforms the Orange Pi 5 Plus (32GB LPDDR4x) into a high-performanc
 **Recommended Image for the best GUI (Desktop) experience with the Orange Pi 5 Plus, use the **Ubuntu 24.04 LTS Desktop with Linux 6.1** image built specifically for this SBC.
 
 OS Boot Download Link (**Size:** 1.7 GB):
-[Link Text](https://ubuntu.com/download/server/arm)
-https://ubuntu.com/download/server/arm
-https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5-plus.html
+[Ubuntu for ARM Chips ](https://ubuntu.com/download/server/arm) or 
+[Joshau Riek - Ubuntu RockChip Download for Orange Pi Plus](https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5-plus.html)
 
 <img width="2307" height="1101" alt="image" src="https://github.com/user-attachments/assets/fecec922-1282-4c4f-a364-b0904c804195" />
 
 ## ⚙️ Storage Layout
-Steps on how to boot from the Orange Pi's USB-C:
-https://github.com/sunnychase/usbc-booting-opi5plus/blob/main/README.md
+[Steps on how to boot from the Orange Pi's USB-C](https://github.com/sunnychase/usbc-booting-opi5plus/blob/main/README.md)
 
 | Partition | Purpose | Filesystem | Size |
 |-----------|---------|------------|------|
@@ -94,9 +92,7 @@ https://github.com/sunnychase/usbc-booting-opi5plus/blob/main/README.md
 
 ## 🌐 Chromium GPU Acceleration Fix
 
-Enable Vulkan + GPU compositing:
-
-https://github.com/sunnychase/chromium-gpu/tree/main
+[Enable Vulkan + GPU compositing](https://github.com/sunnychase/chromium-gpu/tree/main)
 
 ```bash
 chromium-browser --enable-features=VaapiVideoDecoder --use-gl=egl --enable-zero-copy --enable-gpu-rasterization --enable-oop-rasterization --ignore-gpu-blocklist
