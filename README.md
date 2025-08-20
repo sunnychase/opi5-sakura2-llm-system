@@ -55,7 +55,7 @@ OS Boot Download Link (**Size:** 1.7 GB):
 
 [Joshau Riek - Ubuntu RockChip Download for Orange Pi Plus](https://joshua-riek.github.io/ubuntu-rockchip-download/boards/orangepi-5-plus.html)
 
-<img width="1639" height="678" alt="image" src="https://github.com/user-attachments/assets/9cca4739-1098-4347-b336-24f7750fe825" />
+<img width="1717" height="857" alt="image" src="https://github.com/user-attachments/assets/48b7f489-6e3a-4683-bbd1-472896fd3bb8" />
 
 or you can also try [Ubuntu 24.04.3 LTS Desktop for ARM Chips](https://ubuntu.com/download/desktop) 
 
