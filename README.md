@@ -57,6 +57,7 @@ OS Boot Download Link (**Size:** 1.7 GB):
 
 <img width="1717" height="857" alt="image" src="https://github.com/user-attachments/assets/48b7f489-6e3a-4683-bbd1-472896fd3bb8" />
 
+
 or you can also try [Ubuntu 24.04.3 LTS Desktop for ARM Chips](https://ubuntu.com/download/desktop) 
 
 ## ⚙️ Storage Layout
